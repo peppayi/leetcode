@@ -6,17 +6,24 @@ public class P05 {
         if (s == null || s.isEmpty()) return s;
 
         int N = s.length();
-        StringBuilder sb = new StringBuilder(N * 3);
+        long spaceCount = s.chars().filter(Character::isWhitespace).count();
+
+        int newSize = N + (int) spaceCount * 2;
+        int ni = 0;
+
+        char[] ch = new char[newSize];
         for (int i = 0; i < N; ++i) {
             char c = s.charAt(i);
             if (Character.isWhitespace(c)) {
-                sb.append("%20");
+                ch[ni++] = '%';
+                ch[ni++] = '2';
+                ch[ni++] = '0';
             }
             else {
-                sb.append(c);
+                ch[ni++] = c;
             }
         }
 
-        return sb.toString();
+        return String.valueOf(ch);
     }
 }
