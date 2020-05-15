@@ -1,4 +1,4 @@
-package com.peppayi.leetcode.problems;
+package com.peppayi.leetcode.problems.lcof;
 
 public class P05 {
 

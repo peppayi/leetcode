@@ -1,4 +1,6 @@
-package com.peppayi.leetcode.problems;
+package com.peppayi.leetcode.problems.lcof;
+
+import com.peppayi.leetcode.TreeNode;
 
 public class P07 {
 
