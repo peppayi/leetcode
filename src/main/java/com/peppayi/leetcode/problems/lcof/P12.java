@@ -10,9 +10,10 @@ public class P12 {
 
         int N = word.length();
 
+        boolean[][] visited = new boolean[R][C];
+
         for (int ri = 0; ri < R; ++ri) {
             for (int ci = 0; ci < C; ++ci) {
-                boolean[][] visited = new boolean[R][C];
                 if (exist(board, ri, ci, word, 0, visited)) {
                     return true;
                 }
