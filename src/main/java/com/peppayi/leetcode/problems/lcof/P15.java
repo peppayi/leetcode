@@ -7,8 +7,8 @@ public class P15 {
         int c = 0;
 
         while (n != 0) {
-            c += n & 1;
-            n >>>= 1;
+            n &= n - 1;
+            c++;
         }
 
         return c;
