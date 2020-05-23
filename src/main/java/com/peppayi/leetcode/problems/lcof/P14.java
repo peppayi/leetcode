@@ -3,8 +3,6 @@ package com.peppayi.leetcode.problems.lcof;
 public class P14 {
 
     public int cuttingRope(int n) {
-        assert n >= 2 && n <= 58;
-
         if (n <= 3) return n - 1;
 
         int multiply = 1;
@@ -14,7 +12,6 @@ public class P14 {
         }
 
         multiply *= n;
-
         return multiply;
     }
 }
