@@ -5,16 +5,10 @@ public class P17 {
     public int[] printNumbers(int n) {
         assert n > 0;
 
-        int max = 0;
-        while (n > 0) {
-            max *= 10;
-            max += 9;
-            n--;
-        }
-
+        int max = (int)Math.pow(10, n) - 1;
         int[] rv = new int[max];
-        for (int i = 1; i <= max; ++i) {
-            rv[i-1] = i;
+        for (int i = 0; i < max; ++i) {
+            rv[i] = i + 1;
         }
 
         return rv;
