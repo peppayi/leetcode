@@ -10,14 +10,7 @@ public class P16 {
             return 1.0d;
         }
         else {
-            double v = 1.0d;
-
-            while (n > 0) {
-                v *= x;
-                n--;
-            }
-
-            return v;
+            return n % 2 == 0 ? myPow(x * x, n / 2) : myPow(x * x, n / 2) * x;
         }
     }
 }
