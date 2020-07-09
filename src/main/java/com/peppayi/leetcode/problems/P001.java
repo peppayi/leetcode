@@ -1,4 +1,4 @@
-package com.peppayi.leetcode.problems.bytedance;
+package com.peppayi.leetcode.problems;
 
 import java.util.HashMap;
 import java.util.Map;
